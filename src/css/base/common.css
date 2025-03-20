@@ -96,6 +96,18 @@ section {
   padding-bottom: 164px;
 }
 
+.section-title {
+  font-family: var(--impact-family);
+  font-weight: 400;
+  font-size: 136px;
+  line-height: 1.14706;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+}
+
 .theme-light {
   color-scheme: light;
 }
