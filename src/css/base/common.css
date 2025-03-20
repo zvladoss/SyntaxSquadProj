@@ -91,9 +91,9 @@ body {
   color: var(--black);
   background-color: light-dark(--white, --black);
 }
-section {
-  padding-top: 164px;
-  padding-bottom: 164px;
+.section {
+  padding-top: 82px;
+  padding-bottom: 82px;
 }
 
 .section-title {
