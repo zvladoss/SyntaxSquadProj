@@ -6,7 +6,6 @@
   --poppins-family: 'Poppins', sans-serif;
   --impact-family: 'Impact', sans-serif;
   --montserrat-family: 'Montserrat', sans-serif;
-
   /* colors */
 
   --black: #292929;
@@ -90,13 +89,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--black);
-  background-color: light-dark();
+  background-color: light-dark(--white, --black);
 }
 
 .theme-light {
   color-scheme: light;
 }
-
 .theme-dark {
   color-scheme: dark;
 }
