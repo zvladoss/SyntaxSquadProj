@@ -8,12 +8,12 @@
     font-size: 52px;
     line-height: 1.23;
     text-transform: uppercase;
-    color: var(--accet-green);
+    color: light-dark(var(--accet-green), var(--accet-green-dt));
     margin-bottom: 40px;
 }
 
 .benefits__title-span {
-    color: var(--black);
+    color: light-dark(var(--black), var(--white-dt));
 }
 
 .benefits__item:not(:last-child) {
@@ -28,11 +28,11 @@
     width: 48px;
     height: 48px;
     border-radius: 8px;
-    background-color: var(--light-accent);
+    background-color: light-dark(var(--light-accent), var(--dark-accet-dt));
 }
 
 .benefits__item-icon {
-    stroke: var(--accet-green);
+    stroke: light-dark(var(--accet-green), var(--accet-green-dt));
     fill: none;
 }
 
@@ -41,13 +41,13 @@
     font-size: 18px;
     line-height: 1.55;
     text-transform: uppercase;
-    color: var(--black);
+    color: light-dark(var(--black), var(--white-dt));
     margin-bottom: 16px;
 }
 
 .benefits__item-text {
     line-height: 1.5;
-    color: var(--black);
+    color: light-dark(var(--black), var(--white-dt));
 }
 
 @media only screen and (min-width: 768px) {
@@ -86,13 +86,11 @@
     .benefits__item-title {
         text-transform: uppercase;
         font-size: 20px;
-        color: var(--black);
     }
 
     .benefits__item-text {
         font-size: 16px;
         line-height: 1.5;
-        color: var(--black);
     }
 }
 
@@ -125,13 +123,11 @@
     .benefits__item-title {
         text-transform: uppercase;
         font-size: 20px;
-        color: var(--black);
     }
 
     .benefits__item-text {
         font-size: 16px;
         line-height: 1.5;
-        color: var(--black);
     }
 
     .benefits__background {
