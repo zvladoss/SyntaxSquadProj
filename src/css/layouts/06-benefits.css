@@ -51,6 +51,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .benefits {
+        padding-bottom: 124px;
+    }
+
     .benefits__title {
         font-size: 108px;
         line-height: 1.15;
@@ -64,7 +68,7 @@
     }
 
     .benefits__item {
-        width: calc((100% - 20px) / 2);
+        flex-basis: calc((100% - 20px) / 2);
         text-align: left;
         padding: 20px;
         border-radius: 8px;
@@ -93,6 +97,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+    .benefits {
+        padding-bottom: 164px;
+    }
+    
     .benefits__title {
         font-size: 108px;
         line-height: 1.15;
@@ -106,7 +114,7 @@
     }
 
     .benefits__item {
-        width: calc((100% - 64px) / 3);
+        flex-basis: calc((100% - 64px) / 3);
     }
 
     .benefits__item:first-child {
@@ -138,10 +146,9 @@
         (min-resolution: 196dpi) {
             .benefits__background {
                 background-image: url(../../img/06-benefits/decor-bg-3-desc-2x-min.png);
-                background-repeat: no-repeat;
                 background-position: 100% 0;
+                background-repeat: no-repeat;
                 background-size: 526px 408px;
             }
         }
 }
-
