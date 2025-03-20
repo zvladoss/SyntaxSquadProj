@@ -1,0 +1,19 @@
+/* #region BASE */
+@import url(./base/common.css);
+@import url(./base/container.css);
+@import url(./base/typography.css);
+@import url(./base/visually-hidden.css);
+/* #endregion */
+
+/* #region LOYOUTS */
+@import url(./layouts/01-header.css);
+@import url(./layouts/02-hero.css);
+@import url(./layouts/03-about-me.css);
+@import url(./layouts/04-tech-skills.css);
+@import url(./layouts/05-my-projects.css);
+@import url(./layouts/06-benefits.css);
+@import url(./layouts/07-faq.css);
+@import url(./layouts/08-reviews.css);
+@import url(./layouts/09-work-together.css);
+@import url(./layouts/10-footer.css);
+/* #endregion */
