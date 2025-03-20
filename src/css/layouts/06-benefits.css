@@ -126,12 +126,22 @@
         color: var(--black);
     }
 
-    .benefits__container {
-        background-image: url('/img/06-benefits/decor-bg-3-desc-1x-min.png');
+    .benefits__background {
+        background-image: url(../../img/06-benefits/decor-bg-3-desc-1x-min.png);
         background-repeat: no-repeat;
         background-position: top 48px right;
         background-size: 526px 408px;
-    
     }
+
+        @media screen and (-webkit-min-device-pixel-ratio),
+        (min-resolution: 2dppx),
+        (min-resolution: 196dpi) {
+            .benefits__background {
+                background-image: url(../../img/06-benefits/decor-bg-3-desc-2x-min.png);
+                background-repeat: no-repeat;
+                background-position: 100% 0;
+                background-size: 526px 408px;
+            }
+        }
 }
 
