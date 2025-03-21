@@ -1,0 +1,41 @@
+.let-title {
+  font-family: var(--impact-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.work-title {
+  color: var(--accet-green);
+}
+.work-info {
+  font-family: var(--poppins-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+@media screen and (min-width: 768px) {
+  .let-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02;
+  }
+  .work-info {
+    font-size: 20px;
+    line-height: 160%;
+  }
+}
+.form-contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 258px;
+  height: 104px;
+}
