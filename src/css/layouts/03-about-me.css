@@ -1,1 +1,75 @@
 
+
+.title-about {
+    display: flex;
+    font-family: Impact, sans-serif;
+font-weight: 400;
+font-size: 108px;
+line-height: 1.14815;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+text-align: left;
+color: var(--black);
+}
+
+.span:last-child {
+  color: var(--accet-green); 
+}
+.bio-title {
+font-weight: 500;
+font-size: 36px;
+line-height: 1.33333;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: var(--black);
+}
+.about-bio {
+ display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  text-align: left;
+  gap: 24px;
+}
+.list-bio-text {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 32px;
+width: 488px;
+height: 488px;
+font-weight: 300;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: var(--black);
+
+}
+
+.about-img {
+  width: 100%;
+ 
+}
+.image {
+    position: relative;
+    left: 220px;
+    bottom: 210px;
+}
+
+.about-img2 {
+width:100%;
+}
+.image2 {
+display:flex;
+justify-content: flex-end;
+transform: translateY(-400px);
+}
+
+.education {
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+flex-direction: row;
+
+
+}
