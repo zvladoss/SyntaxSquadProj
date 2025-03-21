@@ -67,14 +67,9 @@
   background: var(--light-grey);
 }
 .form-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
   border-radius: 8px;
   padding: 12px 24px;
-  width: 320px;
+  width: 100%;
   height: 48px;
   background: var(--accet-green);
 }
