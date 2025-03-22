@@ -80,6 +80,10 @@
 @media screen and (min-width: 768px) {
   .work-section {
     background-image: url('');
+    background-size: cover; /* Адаптує зображення до розміру секції */
+    background-position: center; /* Вирівнює по центру */
+    background-repeat: no-repeat; /* Забороняє повторення */
+    height: 100vh;
   }
   .let-title {
     font-size: 108px;
