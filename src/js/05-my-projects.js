@@ -13,10 +13,10 @@ const createProjCardElem = ({
   return `
   <li class="my-projects-item">
   <picture>
-    <source srcset="${desk1x}, ${desk2x}" media="(min-width: 1280px)" />
-    <source srcset="${tab1x}, ${tab2x}" media="(min-width: 768px)" />
+    <source srcset="${desk1x},${desk2x}" media="(min-width: 1280px)" />
+    <source srcset="${tab1x},${tab2x}" media="(min-width: 768px)" />
     <source srcset="${mob1x}, ${mob2x}" media="(min-width: 320px)" />
-    <img class="my-projects-img" src="${desk1x}" alt="${title}" />
+    <img class="my-projects-img" src="${desk1x}" alt="${title}" width="1008" />
   </picture>
   <p class="my-projects-subtitle">${subtitle}</p>
   <h3 class="my-projects-title">${title}</h3>
