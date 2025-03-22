@@ -79,9 +79,11 @@
 }
 @media screen and (min-width: 768px) {
   .work-section {
+    padding-top: 120px;
     background-image: url(../../img/09-work/decorWorkTablet.png);
-    background-position: right; /* Вирівнює по центру */
-    background-repeat: no-repeat; /* Забороняє повторення */
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 343px, 269px;
   }
   .let-title {
     font-size: 108px;
@@ -102,6 +104,12 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .work-section {
+    background-image: url(../../img/09-work/decorWorkLaptop.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 526px, 408px;
+  }
   .together-container {
     display: flex;
     justify-content: space-between;
