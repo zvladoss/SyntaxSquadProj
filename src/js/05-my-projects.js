@@ -24,7 +24,7 @@ const createProjCardElem = ({
   <a class="my-projects-link" href="${url}">Visit
     <span>
       <svg class="visit-us-svg" width="24" height="24">
-        <use href="../img/sprite.svg#icon-Arrow-up-right"></use>
+        <use href="./img/sprite.svg#icon-Arrow-up-right"></use>
       </svg>
     </span>
   </a>
