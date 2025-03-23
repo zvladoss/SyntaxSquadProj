@@ -8,14 +8,18 @@ import{a as y,b as v,i as j,S as h}from"./assets/vendor-BiSu-HFD.js";(function()
     <img class="my-projects-img" src="${b}" alt="${e}"/>
   </picture>
   <p class="my-projects-subtitle">${s}</p>
-  <h3 class="my-projects-title">${e}</h3>
-  <a class="my-projects-link" href="${i}">Visit
-    <span>
-      <svg class="visit-us-svg" width="24" height="24">
-        <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
-      </svg>
-    </span>
-  </a>
+  <div class="link-card-container">
+    <h3 class="my-projects-title">${e}</h3>
+    <a class="my-projects-link" href="${i}">Visit
+      <span class="proj-link-span">
+        <svg class="visit-us-svg" width="24" height="24">
+          <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
+        </svg>
+      </span>
+    </a>
+  </div>
+  
+  
 </li>
   `,g=()=>{const e=m+k,s=d.slice(m,e);f.insertAdjacentHTML("beforeend",s.map(S).join("")),m=e,m>=d.length&&(x.style.display="none")};g();x.addEventListener("click",g);new y(".faq-accordion",{duration:1e3,showMultiple:!1,elementClass:"faq-ac-item",triggerClass:"faq-ac-trigger",panelClass:"faq-ac-item-text",activeClass:"is-open",openOnInit:[0]});const L=({author:e,avatar_url:s,review:i})=>`<li class="swiper-slide">
     <div class="paragraph-wrapper">
