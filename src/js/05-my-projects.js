@@ -1,5 +1,4 @@
 import projectsData from '../json/projects.json';
-
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
@@ -40,7 +39,6 @@ const addGalleryItem = () => {
     currentProjects.map(createProjCardElem).join('')
   );
   startIndex = endIndex;
-
   if (startIndex >= projectsData.length) {
     loadMoreBtn.style.display = 'none';
   }
