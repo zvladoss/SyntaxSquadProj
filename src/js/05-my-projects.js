@@ -1,4 +1,5 @@
-import projectsData from '../json/projects.json';
+// import projectsData from '../json/projects.json';
+import { projData } from './projects';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
@@ -34,13 +35,13 @@ const createProjCardElem = ({
 const addGalleryItem = () => {
   const endIndex = startIndex + projectsPerPage;
 
-  const currentProjects = projectsData.slice(startIndex, endIndex);
+  const currentProjects = projData.slice(startIndex, endIndex);
   projGallery.insertAdjacentHTML(
     'beforeend',
     currentProjects.map(createProjCardElem).join('')
   );
   startIndex = endIndex;
-  if (startIndex >= projectsData.length) {
+  if (startIndex >= projData.length) {
     loadMoreBtn.style.display = 'none';
   }
 };
