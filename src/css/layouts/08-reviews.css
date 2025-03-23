@@ -7,6 +7,11 @@
     padding-bottom: 62px;
   }
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .reviews-title {
   font-family: var(--impact-family);
@@ -31,13 +36,6 @@
 
 @media screen and (min-width: 1280px){
   margin-bottom: 80px;
-}
-
-
-.reviews-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .swiper{
