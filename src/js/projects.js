@@ -86,8 +86,8 @@ export const projData = [
       mob2x: '/img/05-my-projects/mob-chego-jewely-2x.webp',
       tab1x: '/img/05-my-projects/tab-chego-jewely-1x.webp',
       tab2x: '/img/05-my-projects/tab-chego-jewely-2x.webp',
-      desk1x: '/img/05-my-projects/desk-chego-jewely-1x.webp',
-      desk2x: '/img/05-my-projects/desk-chego-jewely-2x.webp',
+      desk1x: '/img/05-my-projects/desk-chego-jewelry-1x.webp',
+      desk2x: '/img/05-my-projects/desk-chego-jewelry-2x.webp',
     },
   },
   {
