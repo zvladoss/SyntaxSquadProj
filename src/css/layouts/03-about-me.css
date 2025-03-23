@@ -13,7 +13,6 @@
 
 .section-title {
     font-family: 'Impact', sans-serif;
-    ;
     font-weight: 400;
     font-size: 52px;
     line-height: 1.23;
@@ -32,15 +31,16 @@
 .about-img {
     border-radius: 16px;
     display: block;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+}
+
+.decor-bg {
+    display: none;
 }
 
 .about-bio {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 340px;
     text-align: left;
     gap: 24px;
     list-style-type: none;
@@ -56,6 +56,7 @@
     color: var(--black);
     font-family: var(--font-family);
     margin-bottom: 32px;
+    margin-top: 32px;
     text-align: left;
 }
 
@@ -73,8 +74,6 @@
     width: 100%;
     text-align: left;
     gap: 12px;
-
-
 }
 
 .about-role-box {
@@ -98,20 +97,16 @@
     font-family: var(--font-family);
 }
 
-ul {
-    list-style-type: square;
-    color: var(--black);
-}
-
-li::marker {
-    color: #00b894;
-}
 
 /* ===============Tablet Styles =============== */
 @media screen and (min-width: 768px) {
-    .section.about-me {
-        width: 704px;
+    ul {
+        list-style-type: square;
+        color: var(--black);
+    }
 
+    li::marker {
+        color: #00b894;
     }
 
     .about-me-main {
@@ -133,15 +128,16 @@ li::marker {
         flex-direction: row;
         justify-content: space-between;
         gap: 40px;
+
     }
 
     .about-img {
-        background-image: url('/src/public/img-about/imgDectop2x.webp');
+        background-image: url('/src/img/img-about/Dectop2x.webp');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 336px;
-        height: 392px;
-        margin-top: 365px;
+        width: 320px;
+        height: 374px;
+        margin-top: 395px;
     }
 
     .about-bio-box {
@@ -149,6 +145,7 @@ li::marker {
         flex-direction: column;
         margin-left: 0px;
         width: 336px;
+
     }
 
     .bio-title {
@@ -161,31 +158,25 @@ li::marker {
         justify-content: space-between;
         text-align: left;
         column-gap: 32px;
-          max-width: 704px;
-  margin: 0 auto;
+        max-width: 704px;
+        margin: 0 auto;
     }
 
-    .education-box-list {
+    .decor-bg {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 32px;
-        position: relative;
+        width: 336px;
+        height: 252px;
+        background-image: url('/src/img/img-about/bg2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 133%;
+        right: 35px;
+        transform: none;
+
+
     }
-.education-box-list::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  right: 0;
-  width: 336px;
-  height: 252px;
-  background-image: url('/src/public/img-about/decorBg2x.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 0;
-  pointer-events: none;
-}
+
     .about-education-box {
         display: flex;
         align-items: flex-start;
@@ -200,15 +191,57 @@ li::marker {
         height: 184px;
     }
 
-.about-education,
-.about-role {
-  padding-left: 25px;
+    .about-education,
+    .about-role {
+        padding-left: 25px;
+    }
 }
 
+/* ===============Dectop Styles =============== */
+@media screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
 
-    
+    .about-me-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        width: 1216px;
+        height: 1244px;
+    }
+
+    .about-img {
+        width: 384px;
+        height: 448px;
+
+    }
+
+    .about-content-row {
+        gap: 136px;
+
+    }
+
+    .about-bio-box {
+        align-content: flex-end;
+    }
+
+    /* .decor-bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(+280%);
+  width: 394px;
+  height: 297px;
+  background-image: url('../img/img-about/decor\ bg\ 2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+} */
 }
 
 /* @media screen and (min-width:768px) and (min-resolution:192dpi)
- @media screen and (min-width: 1200px)
  @media screen and (min-width: 1200px)and (min-resolution:192dpi) */
