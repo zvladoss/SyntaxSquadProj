@@ -12,7 +12,7 @@ import{a as y,b as v,i as j,S as h}from"./assets/vendor-BiSu-HFD.js";(function()
   <a class="my-projects-link" href="${i}">Visit
     <span>
       <svg class="visit-us-svg" width="24" height="24">
-        <use href="./img/sprite.svg#icon-Arrow-up-right"></use>
+        <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
       </svg>
     </span>
   </a>
