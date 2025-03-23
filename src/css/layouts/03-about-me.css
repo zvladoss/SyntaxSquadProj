@@ -1,247 +1,251 @@
 .section.about-me {
-    padding: 30px 15px;
-    background-color: var(--bg-light);
-    text-align: center;
+  padding: 30px 15px;
+  background-color: var(--bg-light);
+  text-align: center;
 }
 
 .about-me-main {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  
 }
 
 .section-title {
-    font-family: 'Impact', sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: right;
-    color: var(--black);
-    text-transform: uppercase;
+    display: flex;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--black);
 }
 
 .span {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
-
 .about-img {
-    border-radius: 16px;
-    display: block;
-    max-width: 100%;
+  border-radius: 16px;
+  display: block;
+  max-width: 100%;
 }
 
 .decor-bg {
-    display: none;
+  display: none;
 }
 
 .about-bio {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 24px;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+  list-style-type: none;
 }
 
 .bio-title,
 .role-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: var(--black);
-    font-family: var(--font-family);
-    margin-bottom: 32px;
-    margin-top: 32px;
-    text-align: left;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+margin-bottom: 32px;
+}
+.about-bio-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  column-gap: 24px;
 }
 
-.about-bio-text {
+.about-education {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  gap: 12px;
+}
+
+.about-role-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about-role{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-list {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  font-family: var(--font-family);
+}
+.about-education-box {
+    margin-bottom: 32px;
+}
+ul {
+  list-style-type: square;
+  color: var(--black);
+}
+
+li::marker {
+  color: #00b894;
+}
+
+/* ===============Tablet Styles =============== */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .about-content-row {
+    display: flex;
+    flex-direction: row;
+     gap: 40px;
+  }
+
+  .about-img {
+    margin-top: 395px;
+    border-radius: 16px;
+  }
+
+  .about-bio-box {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    column-gap: 24px;
+    width: 336px;
+    height: 680px;
+  }
+
+  .education-box-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+   gap: 32px;
+  }
+
+  .decor-bg {
+    display: flex;
+    width: 336px;
+    background-image: url('/img-about/bg2x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    position: absolute;
+    transform: translateY(300%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .about-education-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 336px;
+    height: 280px;
+  }
+
+  .about-education,
+  .about-role {
+    padding-left: 25px;
+  }
 }
 
-.about-education {
-    display: flex;
+/* ===============Dectop Styles =============== */
+/* =============== Large Desktop (1440px+) =============== */
+@media screen and (min-width: 1280px) {
+  .about-me-main {
     flex-direction: column;
+    gap: 80px;
+  }
+
+  .about-img {
+    margin-top: 22%;
+    margin-left: 208px;
+  }
+
+  .about-content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    text-align: left;
-    gap: 12px;
-}
+  }
 
-.about-role-box {
+  .about-bio-box {
+    width: 488px;
+    height: 408px;
     display: flex;
     flex-direction: column;
-    text-align: left;
-}
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+  }
 
-.about-role {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+  .bio-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
 
-.about-list {
+  .about-bio-text {
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
-    font-family: var(--font-family);
+  }
+
+  .education-box-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 136px;
+     margin: 0 auto;
+    
+  }
+
+  .about-education {
+    width: 384px;
+    height: 200px;
+    padding-left: 25px;
+  }
+
+  .decor-bg {
+    display: flex;
+    position: absolute;
+   right: 8%;
+    filter: blur(3px);
+    margin-top: 50%;
+    transform: translateY(-75%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .section-title {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 
-/* ===============Tablet Styles =============== */
-@media screen and (min-width: 768px) {
-    ul {
-        list-style-type: square;
-        color: var(--black);
-    }
-
-    li::marker {
-        color: #00b894;
-    }
-
-    .about-me-main {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 40px;
-    }
-
-    .section-title {
-        font-weight: 400;
-        font-size: 108px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    }
-
-    .about-content-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
-
-    }
-
-    .about-img {
-        background-image: url('/src/img/img-about/Dectop2x.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 320px;
-        height: 374px;
-        margin-top: 395px;
-    }
-
-    .about-bio-box {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        width: 336px;
-
-    }
-
-    .bio-title {
-        display: flex;
-    }
-
-    .education-box-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        column-gap: 32px;
-        max-width: 704px;
-        margin: 0 auto;
-    }
-
-    .decor-bg {
-        display: flex;
-        width: 336px;
-        height: 252px;
-        background-image: url('/src/img/img-about/bg2x.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 133%;
-        right: 35px;
-        transform: none;
-
-
-    }
-
-    .about-education-box {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        width: 336px;
-        height: 280px;
-    }
-
-    .about-role-box {
-        width: 336px;
-        height: 184px;
-    }
-
-    .about-education,
-    .about-role {
-        padding-left: 25px;
-    }
-}
-
-/* ===============Dectop Styles =============== */
-@media screen and (min-width: 1200px) {
-    .section-title {
-        font-size: 108px;
-        line-height: 1.14815;
-        letter-spacing: 0.02em;
-    }
-
-    .about-me-main {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 40px;
-        width: 1216px;
-        height: 1244px;
-    }
-
-    .about-img {
-        width: 384px;
-        height: 448px;
-
-    }
-
-    .about-content-row {
-        gap: 136px;
-
-    }
-
-    .about-bio-box {
-        align-content: flex-end;
-    }
-
-    /* .decor-bg {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateX(+280%);
-  width: 394px;
-  height: 297px;
-  background-image: url('../img/img-about/decor\ bg\ 2.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: -1;
-} */
-}
-
-/* @media screen and (min-width:768px) and (min-resolution:192dpi)
- @media screen and (min-width: 1200px)and (min-resolution:192dpi) */
