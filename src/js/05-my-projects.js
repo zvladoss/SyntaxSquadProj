@@ -12,17 +12,19 @@ const createProjCardElem = ({
   return `
   <li class="my-projects-item">
   <picture>
-    <source srcset="${desk1x},${desk2x}" media="(min-width: 1280px)" />
-    <source srcset="${tab1x},${tab2x}" media="(min-width: 768px)" />
-    <source srcset="${mob1x}, ${mob2x}" media="(min-width: 320px)" />
-    <img class="my-projects-img" src="${desk1x}" alt="${title}" width="1008" />
+    
+    <source type="image/webp" srcset=" ${desk1x}, ${desk2x}" media="(min-width: 1280px)" />
+    <source type="image/webp" srcset=" ${tab1x}, ${tab2x}" media="(min-width: 768px)" />
+    <source type="image/webp" srcset=" ${mob1x}, ${mob2x}" media="(min-width: 320px)" />
+    <img class="my-projects-img" src=" ${desk1x}" alt="${title}" 
+    srcset=" ${desk1x}, ${desk2x}" />
   </picture>
   <p class="my-projects-subtitle">${subtitle}</p>
   <h3 class="my-projects-title">${title}</h3>
   <a class="my-projects-link" href="${url}">Visit
     <span>
       <svg class="visit-us-svg" width="24" height="24">
-        <use href="../img/sprite.svg#icon-Arrow-up-right"></use>
+        <use href="./img/sprite.svg#icon-Arrow-up-right"></use>
       </svg>
     </span>
   </a>
