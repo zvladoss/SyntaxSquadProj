@@ -53,7 +53,7 @@
 }
 .my-projects-link:hover,
 .my-projects-link:focus {
-  background-color: var(--hover-grey);
+  background-color: light-dark(var(--hover-grey), var(--hover-charcoal-dt));
 }
 .proj-link-span {
   margin-left: 12px;
