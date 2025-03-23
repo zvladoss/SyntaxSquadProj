@@ -20,14 +20,18 @@ const createProjCardElem = ({
     <img class="my-projects-img" src="${desk1x}" alt="${title}"/>
   </picture>
   <p class="my-projects-subtitle">${subtitle}</p>
-  <h3 class="my-projects-title">${title}</h3>
-  <a class="my-projects-link" href="${url}">Visit
-    <span>
-      <svg class="visit-us-svg" width="24" height="24">
-        <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
-      </svg>
-    </span>
-  </a>
+  <div class="link-card-container">
+    <h3 class="my-projects-title">${title}</h3>
+    <a class="my-projects-link" href="${url}">Visit
+      <span class="proj-link-span">
+        <svg class="visit-us-svg" width="24" height="24">
+          <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
+        </svg>
+      </span>
+    </a>
+  </div>
+  
+  
 </li>
   `;
 };
