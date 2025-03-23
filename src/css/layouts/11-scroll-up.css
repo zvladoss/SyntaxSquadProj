@@ -1,0 +1,34 @@
+.scroll__up {
+    visibility: hidden;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    color: var(--light-grey);
+    box-shadow: inset 0 0 0 3px var(--light-grey);
+    transform: translateY(25px);
+    transition: color 0.4s ease-in;
+}
+
+.scroll__up-svg {
+    stroke: var(--accet-green);
+}
+
+.scroll__up-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll__up-svg-path {
+    fill: none;
+    box-sizing: border-box;
+    stroke: var(--accet-green);
+    stroke-width: 4px;
+    transition: 0.2s;
+}
