@@ -203,6 +203,7 @@
   .together-container::after {
     width: 526px;
     height: 408px;
+    top: -120px;
     background-image: url(../../img/09-work/decorWorkLaptop.png);
   }
 }
