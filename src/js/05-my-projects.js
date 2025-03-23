@@ -1,5 +1,8 @@
 // import projectsData from '../json/projects.json';
+import img from '../img/05-my-projects/desk-chego-jewelry-1x.webp';
+console.log(img);
 import { projData } from './projects';
+import moduleName from '../img/sprite.svg';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
