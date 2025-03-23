@@ -1,3 +1,6 @@
+.work-main {
+  margin-bottom: 40px;
+}
 .let-title {
   font-family: var(--impact-family);
   font-weight: 400;
@@ -5,7 +8,7 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
 }
 .work-title {
   color: var(--accet-green);
@@ -17,7 +20,7 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
   margin-top: 40px;
   margin-bottom: 32px;
 }
@@ -28,8 +31,8 @@
   flex-direction: column;
   gap: 16px;
   width: 258px;
-  margin-bottom: 40px;
 }
+
 .form-item {
   display: flex;
   gap: 16px;
@@ -41,7 +44,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
 }
 
 .work-form {
@@ -54,14 +57,14 @@
   padding: 16px;
   width: 100%;
   height: 48px;
-  background: var(--light-grey);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
 }
 .form-textarea {
   border-radius: 8px;
   padding: 16px;
   width: 100%;
   height: 128px;
-  background: var(--light-grey);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
   resize: none;
 }
 .form-button {
@@ -89,7 +92,7 @@
 }
 
 .modal-content {
-  background-color: white;
+  background-color: light-dark(var(--white), var(--black));
   padding: 48px 32px;
   border-radius: 16px;
   width: 320px;
@@ -119,7 +122,7 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
 }
 .close {
   position: absolute;
@@ -128,14 +131,23 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
+  color: light-dark(var(--black), var(--white));
 }
 @media screen and (min-width: 768px) {
-  .work-section {
+  .work-backround {
     padding-top: 120px;
     background-image: url(../../img/09-work/decorWorkTablet.png);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
-    background-size: 343px, 269px;
+    background-size: 336px, 260px;
+    max-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-main {
+    margin-bottom: 60px;
   }
   .let-title {
     font-size: 108px;
@@ -161,12 +173,11 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .work-section {
+  .work-backround {
     background-image: url(../../img/09-work/decorWorkLaptop.png);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
-    background-size: 526px, 408px;
-    padding-top: 116x;
+    max-width: 1248px;
   }
   .together-container {
     display: flex;
@@ -188,13 +199,13 @@
 }
 @media screen and (min-resolution: 196dpi), (min-resolution: 2dppx) {
   @media screen and (min-width: 768px) {
-    .work-section {
+    .work-backround {
       background-image: url(../../img/09-work/decorWorkTablet2x.png);
       background-size: 343px, 269px;
     }
   }
   @media screen and (min-width: 1280px) {
-    .work-section {
+    .work-backround {
       background-image: url(../../img/09-work/decorWorkLaptop2x.png);
       background-size: 526px, 408px;
     }

@@ -6,7 +6,6 @@
   --poppins-family: 'Poppins', sans-serif;
   --impact-family: 'Impact', sans-serif;
   --montserrat-family: 'Montserrat', sans-serif;
-
   /* colors */
 
   --black: #292929;
@@ -90,13 +89,26 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--black);
-  background-color: light-dark();
+  background-color: light-dark(var(--white), var(--black));
+}
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-family: var(--impact-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: light-dark(var(--black), var(--white));
 }
 
 .theme-light {
   color-scheme: light;
 }
-
 .theme-dark {
   color-scheme: dark;
 }
