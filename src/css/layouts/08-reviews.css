@@ -1,4 +1,12 @@
 @import 'swiper/swiper-bundle.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+
+@media screen and (min-width: 768px){
+  .section{
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
 
 .reviews-title {
   font-family: var(--impact-family);
@@ -7,9 +15,24 @@
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   margin-bottom: 40px;
+  color:  light-dark(var(--black), var(--white));
 }
+
+
+@media screen and (min-width: 768px) {
+.reviews-title {
+  font-size: 108px;
+  line-height: 1.14815;
+  letter-spacing: 0.02em;
+  margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  margin-bottom: 80px;
+}
+
 
 .reviews-wrapper{
   display: flex;
@@ -24,23 +47,33 @@
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px){
+  .swiper{
+    width: 704px;
+    height: 224px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .swiper{
+    width: 1216px;
+  }
+}
 
 .swiper-slide{
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 32px;
-
-
-  width: 320px;
-  height: 296px;
-  background: var(--light-grey);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
   border-radius: 16px
 }
 
 .review-paragraph{
   margin-bottom: 24px;
+  color:  light-dark(var(--black), var(--white));
 }
 .review-person{
   display: flex;
@@ -60,7 +93,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
@@ -78,14 +111,15 @@
 
 }
 .button-style{
-  stroke: #e4e5e6;
+  stroke: light-dark(var(--light-grey), var(--charcoal-dt));
+  stroke-width: 2px;
   fill: none;
-
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #e4e5e6;
+  border: 2px solid light-dark(var(--light-grey), var(--charcoal-dt));
   border-radius: 8px;
   padding: 8px;
   width: 40px;
@@ -97,18 +131,26 @@
 }
 
 .button-style:hover, .button-style:focus{
-  background: var(--light-grey);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
 }
 
 
 .active{
-  stroke: var(--black);
-  border: 1px solid var(--black);
+  stroke:  light-dark(var(--black), var(--white));
+  border: 1px solid light-dark(var(--black), var(--white));
 }
 
-
+.disableHoverFocus{
+  cursor: default;
+  pointer-events: none
+}
+@media screen and (max-width: 767px){
 .paragraph-wrapper{
-  max-height: 168px;
+  height: 168px;
   overflow-y: auto;
-  margin-bottom: 24px;
+  }
+}
+
+.hidden{
+  display: none;
 }
