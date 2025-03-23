@@ -2,10 +2,10 @@ import{a as y,b as v,i as j,S as h}from"./assets/vendor-BiSu-HFD.js";(function()
   <li class="my-projects-item">
   <picture>
     
-    <source type="image/webp" srcset="${b} 1x , ${u} 2x" media="(min-width: 1280px)" />
+    <source type="image/webp" srcset="${b} 1x, ${u} 2x" media="(min-width: 1280px)" />
     <source type="image/webp" srcset="${r} 1x, ${c} 2x" media="(min-width: 768px)" />
     <source type="image/webp" srcset="${a} 1x, ${t} 2x" media="(min-width: 320px)" />
-    <img class="my-projects-img" src=" ${b}" alt="${e}"/>
+    <img class="my-projects-img" src="${b}" alt="${e}"/>
   </picture>
   <p class="my-projects-subtitle">${s}</p>
   <h3 class="my-projects-title">${e}</h3>
