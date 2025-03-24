@@ -5,15 +5,12 @@
 }
 
 .about-me-main {
-  display: flex;
-  flex-direction: column;
   align-items: start;
-  gap: 40px;
-  
+  margin: 0 auto;
 }
 
 .section-title {
-    display: flex;
+  display: flex;
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
@@ -22,22 +19,33 @@
   text-transform: uppercase;
   text-align: right;
   color: var(--black);
+  margin-bottom: 40px;
 }
 
 .span {
   color: var(--accet-green);
 }
 
-.about-img {
+.picture-about {
   border-radius: 16px;
   display: block;
-  max-width: 100%;
+  width: 320px;
+height: 374px;
 }
 
 .decor-bg {
   display: none;
 }
-
+.bio-title-item {
+  display: flex;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 40px 0 32px 0;
+}
 .about-bio {
   display: flex;
   flex-direction: column;
@@ -48,6 +56,7 @@
 
 .bio-title,
 .role-title {
+  display: flex;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -55,7 +64,7 @@
   text-transform: uppercase;
   color: var(--black);
   text-align: left;
-margin-bottom: 32px;
+  margin: 40px 0 32px 0;
 }
 .about-bio-text {
   display: flex;
@@ -65,7 +74,8 @@ margin-bottom: 32px;
   column-gap: 24px;
 }
 
-.about-education {
+.about-education,
+.about-role {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -79,12 +89,6 @@ margin-bottom: 32px;
   text-align: left;
 }
 
-.about-role{
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
 .about-list {
   font-weight: 300;
   font-size: 16px;
@@ -92,9 +96,6 @@ margin-bottom: 32px;
   letter-spacing: 0.03em;
   color: var(--black);
   font-family: var(--font-family);
-}
-.about-education-box {
-    margin-bottom: 32px;
 }
 ul {
   list-style-type: square;
@@ -112,15 +113,35 @@ li::marker {
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
+  .about-me-main {
+    flex-direction: column;
+  }
   .about-content-row {
     display: flex;
     flex-direction: row;
-     gap: 40px;
+    gap: 32px;
+    position: relative;
   }
-
-  .about-img {
+  .bio-title-item {
+    display: flex;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin: 0 0 32px 0;
+    
+  }
+  .bio-title,
+.role-title  {
+    display: flex;
+}
+  .picture-about {
     margin-top: 395px;
     border-radius: 16px;
+    width: 336px;
+height: 392px;
   }
 
   .about-bio-box {
@@ -129,38 +150,33 @@ li::marker {
     justify-content: flex-start;
     flex-direction: column;
     width: 336px;
-    height: 680px;
   }
 
   .education-box-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-   gap: 32px;
+    gap: 32px;
+    margin-top: 20px;
   }
 
   .decor-bg {
     display: flex;
-    width: 336px;
-    background-image: url('/img-about/bg2x.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(2px);
     position: absolute;
-    transform: translateY(300%);
+    right: 0%;
+    filter: blur(3px);
+    margin-top: 50%;
+    transform: translateY(155%);
     z-index: 0;
     pointer-events: none;
   }
-
   .about-education-box {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     width: 336px;
-    height: 280px;
   }
 
   .about-education,
@@ -171,32 +187,33 @@ li::marker {
 
 /* ===============Dectop Styles =============== */
 /* =============== Large Desktop (1440px+) =============== */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
   .about-me-main {
     flex-direction: column;
-    gap: 80px;
   }
 
-  .about-img {
+  .picture-about {
     margin-top: 22%;
     margin-left: 208px;
+    width: 384px;
+height: 448px;
   }
 
   .about-content-row {
     display: flex;
-    justify-content: space-between;
+    gap: 136px;
     align-items: flex-start;
     width: 100%;
+    position: relative;
+    width: 1280px;
   }
 
   .about-bio-box {
     width: 488px;
-    height: 408px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 24px;
   }
 
   .bio-title {
@@ -205,7 +222,14 @@ li::marker {
     line-height: 1.3;
     letter-spacing: 0.01em;
   }
-
+  .about-role-box {
+    text-align: left;
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+width: 384px;
+  }
   .about-bio-text {
     font-family: var(--font-family);
     font-weight: 300;
@@ -216,27 +240,28 @@ li::marker {
 
   .education-box-list {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: row;
     gap: 136px;
-     margin: 0 auto;
-    
+    margin-top: 40px;
+    width: 1280px;
   }
-
+  .bio-title-item {
+    margin: 0 0 32px 0;
+  }
   .about-education {
     width: 384px;
-    height: 200px;
     padding-left: 25px;
   }
 
   .decor-bg {
     display: flex;
     position: absolute;
-   right: 8%;
+    right: 5%;
     filter: blur(3px);
     margin-top: 50%;
-    transform: translateY(-75%);
+    transform: translateY(-50%);
     z-index: 0;
     pointer-events: none;
   }
@@ -246,6 +271,8 @@ li::marker {
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
+  .about-education,
+  .about-role {
+    padding-left: 25px;
+  }
 }
-
-

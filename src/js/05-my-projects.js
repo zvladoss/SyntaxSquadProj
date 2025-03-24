@@ -48,10 +48,3 @@ const addGalleryItem = () => {
 addGalleryItem();
 
 loadMoreBtn.addEventListener('click', addGalleryItem);
-
-/* <li class="my-projects-item">
-  <img class="my-projects-img" src="" alt="" />
-  <p class="my-projects-subtitle"></p>
-  <h3 class="my-projects-title"></h3>
-  <a class="my-projects-link" href=""></a>
-</li> */
