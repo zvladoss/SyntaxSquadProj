@@ -1,3 +1,5 @@
+import iziToast from 'izitoast';
+
 const refs = {
   btnBurger: document.querySelector('.burger-menu-btn'),
   btnClose: document.querySelector('.burger-menu-close-btn'),
@@ -5,6 +7,9 @@ const refs = {
   switcher: document.querySelector('.theme-checkbox'),
   burgerMenuList: document.querySelector('.burger-menu-list'),
 };
+
+const LOCAL_STORAGE_KEY = 'isChecked';
+let isChecked = null;
 
 refs.btnBurger.addEventListener('click', () => {
   refs.burgerModal.classList.add('is-open');
@@ -22,9 +27,23 @@ const onModalClose = e => {
 
 refs.switcher.addEventListener('change', e => {
   if (e.target.checked) {
+    isChecked = true;
+    try {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(isChecked));
+    } catch (err) {
+      iziToast.error({ message: err.message, position: 'topRight' });
+    }
+
     document.body.classList.add('theme-light');
     document.body.classList.remove('theme-dark');
     return;
+  }
+
+  isChecked = false;
+  try {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(isChecked));
+  } catch (err) {
+    iziToast.error({ message: err.message, position: 'topRight' });
   }
 
   document.body.classList.add('theme-dark');
@@ -38,3 +57,19 @@ refs.burgerMenuList.addEventListener('click', e => {
 
   refs.burgerModal.classList.remove('is-open');
 });
+
+const load = () => {
+  try {
+    isChecked = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+  } catch (err) {
+    iziToast.error({ message: err.message, position: 'topRight' });
+  }
+
+  if (isChecked) {
+    document.body.classList.add('theme-light');
+    document.body.classList.remove('theme-dark');
+    refs.switcher.checked = true;
+  }
+};
+
+load();
