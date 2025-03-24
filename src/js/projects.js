@@ -1,15 +1,22 @@
+import walletMob1x from '../img/05-my-projects/desk-wallet-1x.webp';
+import walletMob2x from '../img/05-my-projects/desk-wallet-2x.webp';
+import walletTab1x from '../img/05-my-projects/tab-wallet-1x.webp';
+import walletTab2x from '../img/05-my-projects/tab-wallet-2x.webp';
+import walletDesk1x from '../img/05-my-projects/desk-wallet-1x.webp';
+import walletDesk2x from '../img/05-my-projects/desk-wallet-2x.webp';
+
 export const projData = [
   {
     title: 'Wallet webservice',
     subtitle: 'React, JavaScript, Node JS, Git',
     url: '',
     imgUrls: {
-      mob1x: '/img/05-my-projects/mob-wallet-1x.webp',
-      mob2x: '/img/05-my-projects/mob-wallet-2x.webp',
-      tab1x: '/img/05-my-projects/tab-wallet-1x.webp',
-      tab2x: '/img/05-my-projects/tab-wallet-2x.webp',
-      desk1x: '/img/05-my-projects/desk-wallet-1x.webp',
-      desk2x: '/img/05-my-projects/desk-wallet-2x.webp',
+      mob1x: walletMob1x,
+      mob2x: walletMob2x,
+      tab1x: walletTab1x,
+      tab2x: walletTab2x,
+      desk1x: walletDesk1x,
+      desk2x: walletDesk2x,
     },
   },
   {
