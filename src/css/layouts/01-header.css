@@ -1,0 +1,251 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 101;
+
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  margin-right: auto;
+  font-family: var(--impact-family);
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: light-dark(var(--black), var(--white));
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.logo-accent {
+  color: var(--accet-green-dt);
+}
+
+.menu-list {
+  display: none;
+  margin-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: flex;
+  }
+}
+
+.menu-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-list-link {
+  color: light-dark(var(--black), var(--white));
+}
+
+/* -------------------------------------------- */
+
+.theme-toggle {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 330px) {
+  .theme-toggle {
+    display: none;
+  }
+}
+
+.theme-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switcher {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 16px;
+}
+
+.switcher-icon {
+  position: absolute;
+  transform: scale(2);
+  transition: 300ms opacity ease-in-out;
+}
+
+.switcher-icon-sun {
+  opacity: 0;
+}
+
+.theme-checkbox:checked + .switcher .switcher-icon-sun {
+  opacity: 1;
+}
+
+.theme-checkbox:checked + .switcher .switcher-icon-moon {
+  opacity: 0;
+}
+
+/* -------------------------------------------- */
+
+.burger-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-btn {
+    display: none;
+  }
+}
+
+.burger-menu-svg {
+  color: light-dark(var(--black), var(--white));
+}
+
+.burger-menu-svg use {
+  fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    /* transition: 250ms opacity linear; */
+    opacity: 0;
+    pointer-events: none;
+
+    background-color: light-dark(var(--white), var(--black));
+  }
+
+  .burger-menu-modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .burger-menu-container {
+    position: relative;
+    max-width: 320px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(../../img/burger-menu-modal/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-clip: content-box;
+  }
+
+  .burger-menu-close-btn {
+    position: absolute;
+    top: -4px;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+
+  .burger-menu-close-svg {
+    color: light-dark(var(--black), var(--white));
+  }
+
+  .burger-menu-close-svg use {
+    stroke: currentColor;
+  }
+
+  .burger-menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    padding: 16px 20px;
+
+    /* background-image: url(../../img/burger-menu-modal/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-clip: content-box; */
+  }
+
+  .burger-menu-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .burger-menu-list-link {
+    color: light-dark(var(--black), var(--white));
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .burger-menu-wrapper {
+    background-image: url(../../img/burger-menu-modal/bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-modal {
+    display: none;
+  }
+  .burger-menu-logo {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}

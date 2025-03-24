@@ -28,9 +28,7 @@ const createProjCardElem = ({
         </svg>
       </span>
     </a>
-  </div>
-  
-  
+  </div>  
 </li>
   `;
 };
