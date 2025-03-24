@@ -3,6 +3,7 @@ const refs = {
   btnClose: document.querySelector('.burger-menu-close-btn'),
   burgerModal: document.querySelector('.burger-menu-modal'),
   switcher: document.querySelector('.theme-checkbox'),
+  burgerMenuList: document.querySelector('.burger-menu-list'),
 };
 
 refs.btnBurger.addEventListener('click', () => {
@@ -28,4 +29,12 @@ refs.switcher.addEventListener('change', e => {
 
   document.body.classList.add('theme-dark');
   document.body.classList.remove('theme-light');
+});
+
+refs.burgerMenuList.addEventListener('click', e => {
+  if (!e.target.classList.contains('burger-menu-list-link')) {
+    return;
+  }
+
+  refs.burgerModal.classList.remove('is-open');
 });
