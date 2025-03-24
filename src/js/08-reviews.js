@@ -29,11 +29,10 @@ const renderReviewCards = async () => {
 
 renderReviewCards();
 
-const initSwiper = () => {
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    breakpoints: { 1280: { slidesPerView: 2, spaceBetween: 32 } },
-  });
+
+const initSwiper = ()=>{
+  const swiper = new Swiper('.swiper', {slidesPerView: 1, spaceBetween: 32, breakpoints: {1280: {slidesPerView: 2}}});
+
 
   refs.buttonNext.addEventListener('click', () => {
     swiper.slideNext();
