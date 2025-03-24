@@ -114,7 +114,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  stroke: light-dark(var(--light-grey), var(--charcoal-dt));
   border: 2px solid light-dark(var(--light-grey), var(--charcoal-dt));
   border-radius: 8px;
   padding: 8px;
@@ -142,6 +142,17 @@
   border: 1px solid light-dark(var(--black), var(--white));
 }
 
+.disableHoverFocus {
+  cursor: default;
+  pointer-events: none;
+}
+.button-style.icon-svg {
+  stroke: var(--light-grey);
+}
+
+.button-style.active .icon-svg {
+  stroke: light-dark(var(--black), var(--light-grey));
+}
 .disableHoverFocus {
   cursor: default;
   pointer-events: none;
