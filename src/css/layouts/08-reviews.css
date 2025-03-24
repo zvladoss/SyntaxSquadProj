@@ -2,10 +2,10 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 
 @media screen and (min-width: 768px) {
-  .section {
+  /* .section {
     padding-top: 62px;
     padding-bottom: 62px;
-  }
+  } */
 }
 .reviews-wrapper {
   display: flex;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .swiper {
