@@ -58,7 +58,7 @@
   width: 100%;
   height: 48px;
   background: light-dark(var(--light-grey), var(--charcoal-dt));
-  color: light-dark(var(--black, var(--white)));
+  color: light-dark(var(--black), var(--white));
 }
 .form-textarea {
   border-radius: 8px;
@@ -67,7 +67,7 @@
   height: 128px;
   background: light-dark(var(--light-grey), var(--charcoal-dt));
   resize: none;
-  color: light-dark(var(--black, var(--white)));
+  color: light-dark(var(--black), var(--white));
 }
 .form-button {
   border-radius: 8px;
