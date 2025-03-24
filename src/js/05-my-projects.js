@@ -1,4 +1,4 @@
-import { projData } from '../json/projects.json';
+import { projData } from '../projects.json';
 console.log(projData);
 // import { projData } from './projects.js';
 const projGallery = document.querySelector('.projects-list');
