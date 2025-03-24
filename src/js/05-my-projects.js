@@ -1,5 +1,5 @@
 // import { projData } from './projects.js';
-import projData from '../json/projects.json';
+import { projData } from './projects.js';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
@@ -10,24 +10,13 @@ const createProjCardElem = ({
   url,
   imgUrls: { mob1x, mob2x, tab1x, tab2x, desk1x, desk2x },
 }) => {
-  const getImagePath = imagePath => new URL(imagePath, import.meta.url).href;
-
   return `
   <li class="my-projects-item">
   <picture>
-    
-    <source type="image/webp" srcset="${getImagePath(
-      desk1x
-    )} 1x, ${getImagePath(desk2x)} 2x" media="(min-width: 1280px)" />
-    <source type="image/webp" srcset="${getImagePath(tab1x)} 1x, ${getImagePath(
-    tab2x
-  )} 2x" media="(min-width: 768px)" />
-    <source type="image/webp" srcset="${getImagePath(mob1x)} 1x, ${getImagePath(
-    mob2x
-  )} 2x" media="(min-width: 320px)" />
-    <img class="my-projects-img" src="${getImagePath(
-      desk1x
-    )}" alt="${getImagePath(title)}" width="1008"/>
+    <source type="image/webp" srcset="${desk1x} 1x, ${desk2x} 2x" media="(min-width: 1280px)" />
+    <source type="image/webp" srcset="${tab1x} 1x, ${tab2x} 2x" media="(min-width: 768px)" />
+    <source type="image/webp" srcset="${mob1x} 1x, ${mob2x} 2x" media="(min-width: 320px)" />
+    <img class="my-projects-img" src="${desk1x}" alt="${title}" width="1008"/>
   </picture>
   <p class="my-projects-subtitle">${subtitle}</p>
   <div class="link-card-container">
