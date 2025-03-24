@@ -1,6 +1,5 @@
 @import url('modern-normalize/modern-normalize.css');
 
-
 :root {
   /* Fonts */
 
@@ -105,6 +104,25 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: light-dark(var(--black), var(--white));
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+  .section-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
 }
 
 .theme-light {
