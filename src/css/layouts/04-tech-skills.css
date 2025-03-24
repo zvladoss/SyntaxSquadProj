@@ -1,3 +1,7 @@
+.tech-skills {
+  overflow: hidden;
+}
+
 .marquee {
   overflow: hidden;
   font-family: 'Pridi', sans-serif;
@@ -8,13 +12,16 @@
 }
 
 .green {
-  background: var(--light-accent);
+  color: light-dark(var(--black), var(--white));
+  background: light-dark(var(--light-accent), var(--dark-accet-dt));
   z-index: 2;
 }
 .gray {
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
+
   z-index: 1;
   margin-top: 5px;
-  background: var(--light-grey);
   transform: rotate(2deg) translate(-4%);
   width: 105%;
 }

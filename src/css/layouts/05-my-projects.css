@@ -26,9 +26,20 @@
   margin-bottom: 16px;
 }
 .my-projects-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
+
+.my-projects-title,
+.my-projects-subtitle {
+  color: light-dark(var(--black), var(--white));
+}
+
 .my-projects-link {
   font-weight: 500;
   font-size: 16px;
@@ -48,7 +59,10 @@
 }
 .my-projects-link:hover,
 .my-projects-link:focus {
-  background-color: var(--hover-grey);
+  background-color: light-dark(var(--hover-grey), var(--hover-charcoal-dt));
+}
+.proj-link-span {
+  margin-left: 12px;
 }
 .visit-us-svg {
   display: flex;
@@ -79,4 +93,50 @@
   border-radius: 2px;
   left: 24px;
   bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+  }
+  .container {
+  }
+  .projects-container {
+    gap: 60px;
+  }
+  .section-title {
+  }
+  .projects-span {
+  }
+  .projects-list {
+  }
+  .load-more-btn {
+  }
+  .my-projects-item {
+  }
+  .my-projects-img {
+    margin-bottom: 16px;
+  }
+  .my-projects-subtitle {
+    margin-bottom: 20px;
+  }
+  .my-projects-title {
+    margin-bottom: 0;
+  }
+  .link-card-container {
+    display: flex;
+    align-items: center;
+  }
+  .my-projects-link {
+  }
+  .visit-us-svg {
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects-section {
+    padding-bottom: 0;
+  }
+  .projects-container {
+    gap: 80px;
+  }
 }
