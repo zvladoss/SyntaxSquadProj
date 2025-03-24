@@ -1,6 +1,4 @@
-import { projData } from '../projects.json';
-console.log(projData);
-// import { projData } from './projects.js';
+import { projData } from './projects.js';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
