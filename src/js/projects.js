@@ -11,7 +11,7 @@ import greenHarvestMob2x from '../img/05-my-projects/mob-green-harvest-2x.webp';
 import greenHarvestTab1x from '../img/05-my-projects/tab-green-harvest-1x.webp';
 import greenHarvestTab2x from '../img/05-my-projects/tab-green-harvest-2x.webp';
 import greenHarvestDesk1x from '../img/05-my-projects/desk-green-harvest-1x.webp';
-import greenHarvestdesk2x from '../img/05-my-projects/desk-green-harvest-2x.webp';
+import greenHarvestDesk2x from '../img/05-my-projects/desk-green-harvest-2x.webp';
 // * English Exellence
 import englishExMob1x from '../img/05-my-projects/mob-english-excellence-1x.webp';
 import englishExMob2x from '../img/05-my-projects/mob-english-excellence-2x.webp';
