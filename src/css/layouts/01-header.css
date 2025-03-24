@@ -173,10 +173,23 @@
     pointer-events: auto;
   }
 
+  .burger-menu-container {
+    position: relative;
+    max-width: 320px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(../../img/burger-menu-modal/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-clip: content-box;
+  }
+
   .burger-menu-close-btn {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: -4px;
+    right: 0;
 
     display: flex;
     justify-content: center;
@@ -203,10 +216,10 @@
     height: 100%;
     padding: 16px 20px;
 
-    background-image: url(../../img/burger-menu-modal/bg.png);
+    /* background-image: url(../../img/burger-menu-modal/bg.png);
     background-position: center;
     background-size: contain;
-    background-clip: content-box;
+    background-clip: content-box; */
   }
 
   .burger-menu-list-item:not(:last-child) {
