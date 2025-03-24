@@ -127,6 +127,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .projects-section {
+    margin-bottom: 0;
+  }
   .projects-container {
     gap: 80px;
   }
