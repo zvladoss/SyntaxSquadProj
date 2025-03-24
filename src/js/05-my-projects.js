@@ -1,4 +1,5 @@
 import { projData } from './projects.js';
+import icon from '../img/sprite.svg';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
@@ -23,7 +24,7 @@ const createProjCardElem = ({
     <a class="my-projects-link" href="${url}" aria-label="Visit ${title} website">Visit
       <span class="proj-link-span">
         <svg class="visit-us-svg" width="24" height="24">
-          <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
+          <use href="${icon}#icon-Arrow-up-right"></use>
         </svg>
       </span>
     </a>
