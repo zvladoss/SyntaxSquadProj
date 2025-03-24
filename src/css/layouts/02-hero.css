@@ -229,8 +229,8 @@
 
 @media screen and (min-width: 786px) {
   .hero-socials {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -255,4 +255,12 @@
 
 .socials-list-link {
   color: light-dark(var(--black), var(--white));
+}
+
+@media screen and (min-width: 786px) {
+  .socials-list-link {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

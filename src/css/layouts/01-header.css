@@ -12,8 +12,8 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -72,6 +72,14 @@
 
 .menu-list-link {
   color: light-dark(var(--black), var(--white));
+}
+
+@media screen and (min-width: 768px) {
+  .menu-list-link {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
 /* -------------------------------------------- */
@@ -215,11 +223,6 @@
 
     height: 100%;
     padding: 16px 20px;
-
-    /* background-image: url(../../img/burger-menu-modal/bg.png);
-    background-position: center;
-    background-size: contain;
-    background-clip: content-box; */
   }
 
   .burger-menu-list-item:not(:last-child) {
