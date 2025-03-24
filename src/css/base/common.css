@@ -88,8 +88,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
-  background-color: light-dark(var(--white), var(--black));
+  background-color: light-dark(var(--white), var(--black-dt));
 }
 .section {
   padding-top: 40px;
