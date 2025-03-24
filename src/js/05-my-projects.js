@@ -1,6 +1,5 @@
-import { projData } from '../projects.json';
-console.log(projData);
-// import { projData } from './projects.js';
+import { projData } from './projects.js';
+import icon from '../img/sprite.svg';
 const projGallery = document.querySelector('.projects-list');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let startIndex = 0;
@@ -14,7 +13,6 @@ const createProjCardElem = ({
   return `
   <li class="my-projects-item">
   <picture>
-    
     <source type="image/webp" srcset="${desk1x} 1x, ${desk2x} 2x" media="(min-width: 1280px)" />
     <source type="image/webp" srcset="${tab1x} 1x, ${tab2x} 2x" media="(min-width: 768px)" />
     <source type="image/webp" srcset="${mob1x} 1x, ${mob2x} 2x" media="(min-width: 320px)" />
@@ -26,13 +24,11 @@ const createProjCardElem = ({
     <a class="my-projects-link" href="${url}" aria-label="Visit ${title} website">Visit
       <span class="proj-link-span">
         <svg class="visit-us-svg" width="24" height="24">
-          <use href="/img/sprite.svg#icon-Arrow-up-right"></use>
+          <use href="${icon}#icon-Arrow-up-right"></use>
         </svg>
       </span>
     </a>
-  </div>
-  
-  
+  </div>  
 </li>
   `;
 };
