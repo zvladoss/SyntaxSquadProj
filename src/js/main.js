@@ -8,3 +8,4 @@ import './07-faq.js';
 import './08-reviews.js';
 import './09-work-together.js';
 import './10-footer.js';
+import './11-scroll-up';
