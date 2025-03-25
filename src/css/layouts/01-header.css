@@ -72,8 +72,12 @@
 
 .menu-list-link {
   color: light-dark(var(--black), var(--white));
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.menu-list-link:hover,
+.menu-list-link:focus {
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
+}
 @media screen and (min-width: 768px) {
   .menu-list-link {
     display: flex;
@@ -169,7 +173,6 @@
     height: 100%;
     padding: 20px;
 
-    /* transition: 250ms opacity linear; */
     opacity: 0;
     pointer-events: none;
 
@@ -231,6 +234,11 @@
 
   .burger-menu-list-link {
     color: light-dark(var(--black), var(--white));
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .burger-menu-list-link:hover,
+  .burger-menu-list-link:focus {
+    color: light-dark(var(--accet-green), var(--accet-green-dt));
   }
 }
 

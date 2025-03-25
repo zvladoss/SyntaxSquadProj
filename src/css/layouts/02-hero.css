@@ -172,6 +172,12 @@
   height: 80px;
   background-color: light-dark(var(--light-accent), var(--accet-green-dt));
   border-radius: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link:hover::after,
+.hero-link:focus::after {
+  background-color: light-dark(var(--accet-green), var(--hover));
 }
 
 @media screen and (min-width: 352px) {
