@@ -38,7 +38,7 @@
 }
 
 .swiper {
-  width: 320px;
+  width: 100%;
   height: 296px;
   position: relative;
   margin-bottom: 24px;
@@ -46,16 +46,10 @@
 
 @media screen and (min-width: 768px) {
   .swiper {
-    width: 704px;
     height: 224px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .swiper {
-    width: 1216px;
-  }
-}
 
 .swiper-slide {
   margin-bottom: 24px;
