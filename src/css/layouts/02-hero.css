@@ -170,7 +170,7 @@
 
   width: 165px;
   height: 92px;
-  background-color: var(--accet-green-dt);
+  background-color: light-dark(var(--light-accent), var(--accet-green-dt));
   border-radius: 16px;
 }
 
