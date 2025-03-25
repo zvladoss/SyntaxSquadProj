@@ -32,7 +32,7 @@
 }
 
 svg.faq-arrow {
-  fill:transparent
+  fill: transparent;
 }
 
 .ac-trigger::after {
@@ -47,7 +47,7 @@ svg.faq-arrow {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: light-dark(#292929, #f0f0f0);
-  width: 224px;
+  width: 207px;
 }
 
 .faq-ac-item-text {
