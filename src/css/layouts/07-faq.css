@@ -29,6 +29,7 @@
 .faq-ac-trigger {
   display: flex;
   gap: 16px;
+  cursor: pointer;
 }
 
 svg.faq-arrow {
