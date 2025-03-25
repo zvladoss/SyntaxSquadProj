@@ -1,23 +1,18 @@
 const scrollUp = document.querySelector('.scroll__up');
 const scrollPath = document.querySelector('.scroll__up-svg-path');
-const pathLength = scrollPath.getTotalLength(); //Загальна довжина
-const offset = 200; //Зсув
+const pathLength = scrollPath.getTotalLength();
+const offset = 200;
 
-// Шаблон штрихів для малювання контуру фігури
 scrollPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-// Зміщення під час прокручування тире з властивістю
 scrollPath.style.transition = 'stroke-dashoffset 20ms';
-// Визначаємо поточну вертикальну прокрутку сторінки у браузері
 const getTop = () => window.scrollY || document.documentElement.scrollTop;
 
-// Оновлення висоти прокрутки
 const updateDashoffset = () => {
-  const height = document.documentElement.scrollHeight - window.innerHeight; // Обчислення висоти прокрутки
-  const dashoffset = pathLength - (getTop() * pathLength) / height; // Визначаємо пройдений шлях
-  scrollPath.style.strokeDashoffset = dashoffset; // Застосування
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const dashoffset = pathLength - (getTop() * pathLength) / height;
+  scrollPath.style.strokeDashoffset = dashoffset;
 };
 
-// Прокручування сторінки
 window.addEventListener('scroll', () => {
   updateDashoffset();
   if (getTop() > offset) {
@@ -27,7 +22,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Прокручуваня сторінку вгору при кліку
 scrollUp.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
