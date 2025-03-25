@@ -168,15 +168,16 @@
 
   transform: translateY(-50%);
 
-  width: 165px;
-  height: 92px;
+  width: 130px;
+  height: 80px;
   background-color: light-dark(var(--light-accent), var(--accet-green-dt));
   border-radius: 16px;
 }
 
-@media screen and (max-width: 339px) {
+@media screen and (min-width: 352px) {
   .hero-link::after {
-    display: none;
+    width: 165px;
+    height: 92px;
   }
 }
 
