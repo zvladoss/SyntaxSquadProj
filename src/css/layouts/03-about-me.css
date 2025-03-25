@@ -1,0 +1,162 @@
+.about__title {
+    font-family: 'Impact', sans-serif;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-cl);
+    margin-bottom: 40px;
+}
+
+.about__title-span {
+    color: var(--accet-green);
+}
+
+.about__bio-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 32px;
+  }
+
+.about__bio-image {
+    border-radius: 18px;
+    margin-bottom: 40px;
+  }
+
+.about__info-education-item::before,
+.about__info-role-item::before {
+    content: '';
+    display: inline-block;
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--accet-green);
+    transform: rotate(-180deg);
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about__info-education-title {
+    padding-top: 40px;
+}
+
+.about__info-education-title,
+.about__info-role-title,
+.about__bio-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about__info-education-list,
+.about__info-role-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__info-education-text,
+.about__info-role-text {
+    color: var(--black);
+    margin-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .about__title {
+        font-size: 108px;
+    }
+
+    .about__bio-text {
+        width: 336px;
+    }
+
+    .about__bio-wrapper {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .about__bio-image{
+        width: 336px;
+        height: 392px;
+        margin-top: 368px;
+        margin-bottom: 0;
+    }
+
+    .about__info-education-title,
+    .about__info-role-title,
+    .about__bio-title {
+        font-size: 36px;
+        line-height: 48px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+        padding-top: 0;
+    }
+
+    .background__about {
+        background-image: url(../../img/03-about/tablet-decor-bg-2@1x.png);
+        background-repeat: no-repeat;
+        background-position: right 10px bottom 165px;
+        background-size: auto;
+    }
+
+    .about__info {
+        flex-direction: row;
+    }
+
+    .about__info-education {
+        width: 336px;
+    }
+
+    .about__info-role {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about__title {
+        font-size: 108px;
+        line-height: 124px;
+        letter-spacing: 0.02em;
+    }
+    .about__bio {
+        margin-bottom: 80px;
+    }
+    .about__bio-image {
+        width: 384px;
+        height: 448px;
+        margin-top: 272px;
+    }
+    .about__bio-wrapper {
+        justify-content: flex-end;
+        gap: 136px;
+        margin-bottom: 80px;
+    }
+    .background__about {
+        background-image: url(../../img/03-about/desktop-decor-bg-2@1x.png);
+        background-repeat: no-repeat;
+        background-position: right 32px bottom 260px;
+        background-size: auto;
+    }
+    .about__bio-text {
+        width: 488px;
+    }
+    .about__info-education {
+        width: 384px;
+    }
+    .about__info {
+        padding-left: 210px;
+        gap: 136px;
+    }
+
+}
