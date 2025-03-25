@@ -4,13 +4,13 @@ const form = document.querySelector('.work-form');
 const modal = document.getElementById('successModal');
 const closeModal = document.querySelector('.modal-close-btn');
 const validation = document.querySelector('.form-input');
+const successIcon = document.querySelector('.email-success-icon');
+const errorText = document.querySelector('.email-error');
 
 validation.addEventListener('change', event => {
   const emailField = event.target;
   const emailValue = emailField.value.trim();
   const emailRegex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  const successIcon = document.querySelector('.email-success-icon');
-  const errorText = document.querySelector('.email-error');
 
   if (emailRegex.test(emailValue)) {
     emailField.classList.remove('error');
@@ -59,8 +59,8 @@ form.addEventListener('submit', async function (event) {
     }
 
     openModal();
-
     form.reset();
+    successIcon.style.display = 'none';
   } catch (error) {
     iziToast.error({
       title: 'Error',

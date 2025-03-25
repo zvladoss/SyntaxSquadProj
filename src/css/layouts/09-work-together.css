@@ -69,10 +69,6 @@
   background: light-dark(var(--light-grey), var(--charcoal-dt));
   color: light-dark(var(--black), var(--white));
 }
-.form-input.error {
-  border-color: #ff4d4d;
-  color: #ff4d4d;
-}
 
 .email-error {
   display: none;
