@@ -1,15 +1,16 @@
 .about__title {
     font-family: 'Impact', sans-serif;
+    font-weight: 400;
     font-size: 52px;
-    line-height: 1.23077;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-cl);
+    color: light-dark(var(--black),var(--white-dt));
     margin-bottom: 40px;
 }
 
 .about__title-span {
-    color: var(--accet-green);
+    color: light-dark(var(--accet-green),var(--accet-green-dt));
 }
 
 .about__bio-text {
