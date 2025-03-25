@@ -1,0 +1,172 @@
+.about__title {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: light-dark(var(--black),var(--white-dt));
+    margin-bottom: 40px;
+}
+
+.about__title-span {
+    color: light-dark(var(--accet-green),var(--accet-green-dt));
+}
+.about__bio-title  {
+    margin-bottom: 32px;
+}
+.about__bio-text {
+color: light-dark(var(--black),var(--white-dt));
+  }
+  .about__bio-text-margin{
+    margin-bottom: 24px;
+  }
+
+.about__bio-image {
+    border-radius: 18px;
+    margin-bottom: 40px;
+  }
+.about__bio-wrapper {
+    margin-bottom: 40px;
+}
+.about__info-education-item::before,
+.about__info-role-item::before {
+    content: '';
+    display: block;
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--accet-green);
+    transform: rotate(-180deg);
+    position: relative;
+    left: 10px;
+    top: 12px;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about__bio-title,
+.about__info-education-title,
+.about__info-role-title
+ {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: light-dark(var(--black),var(--white-dt));
+    margin-bottom: 32px;
+}
+
+.about__info-education-list,
+.about__info-role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about__info-education-text,
+.about__info-role-text {
+    color: light-dark(var(--black),var(--white-dt));
+    margin-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .about__title {
+        font-size: 108px;
+    }
+
+    .about__bio-text {
+        width: 336px;
+    }
+
+    .about__bio-wrapper {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+.about__bio {
+    margin-bottom: 40px;
+}
+    .about__bio-image{
+        width: 336px;
+        height: 392px;
+        margin-top: 368px;
+        margin-bottom: 0;
+    }
+
+    .about__info-education-title,
+    .about__info-role-title,
+    .about__bio-title {
+        font-size: 36px;
+        line-height: 48px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+        padding-top: 0;
+    }
+
+    .background__about {
+        background-image: url(../../img/03-about/tablet-decor-bg-2@1x.png);
+        background-repeat: no-repeat;
+        background-position: right 10px bottom 165px;
+        background-size: auto;
+    }
+
+    .about__info {
+        flex-direction: row;
+    }
+
+    .about__info-education {
+        width: 336px;
+    }
+
+    .about__info-role {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about__title {
+        font-size: 108px;
+        line-height: 124px;
+        letter-spacing: 0.02em;
+    }
+    .about__bio {
+        margin-bottom: 80px;
+    }
+    .about__bio-image {
+        width: 384px;
+        height: 448px;
+        margin-top: 272px;
+    }
+    .about__bio-wrapper {
+        justify-content: flex-end;
+        gap: 136px;
+        margin-bottom: 80px;
+    }
+    .background__about {
+        background-image: url(../../img/03-about/desktop-decor-bg-2@1x.png);
+        background-repeat: no-repeat;
+        background-position: right 32px bottom 260px;
+        background-size: auto;
+    }
+    .about__bio-text {
+        width: 488px;
+    }
+    .about__info-education {
+        width: 384px;
+    }
+    .about__info {
+        padding-left: 210px;
+        gap: 136px;
+    }
+    .about__info-education-list,
+    .about__info-role-list {
+    gap: 16px;
+    }
+
+}
