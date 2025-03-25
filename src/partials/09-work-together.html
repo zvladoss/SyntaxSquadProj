@@ -40,14 +40,27 @@
       </ul>
     </div>
     <form class="work-form" method="post">
-      <input
-        name="email"
-        type="text"
-        class="form-input"
-        placeholder="Your email*"
-        required
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-      />
+      <div class="input-container">
+        <input
+          name="email"
+          type="text"
+          class="form-input"
+          placeholder="Your email*"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+        <span class="email-error">Invalid email, try again</span>
+        <span class="email-success-icon"
+          ><svg
+            class="success-svg"
+            width="16"
+            height="
+        16"
+          >
+            <use href="./img/sprite.svg#icon-success"></use>
+          </svg>
+        </span>
+      </div>
       <textarea
         name="message"
         class="form-textarea"
@@ -60,7 +73,11 @@
 </section>
 <div id="successModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <button class="modal-close-btn">
+      <svg class="modal-close-svg" width="24" height="24">
+        <use href="./img/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
     <h2 class="modal-title">THANK YOU FOR YOUR INTEREST IN COOPERATION!</h2>
     <p class="modal-info">
       The manager will contact you shortly to discuss further details and
