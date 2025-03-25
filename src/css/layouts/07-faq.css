@@ -31,6 +31,14 @@
   gap: 16px;
 }
 
+svg.faq-arrow {
+  fill:transparent
+}
+
+.ac-trigger::after {
+  display: none !important;
+}
+
 .faq-ac-item-header {
   font-family: var(--poppins-family);
   font-weight: 400;
@@ -59,7 +67,7 @@
 }
 
 .faq-arrow {
-  fill: light-dark(#292929, #f0f0f0);
+  stroke: light-dark(#292929, #f0f0f0);
   transform: rotate(0deg);
   transition: transform 1s ease-in-out;
 }
