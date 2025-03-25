@@ -72,13 +72,13 @@
   height: 48px;
   background: light-dark(var(--light-grey), var(--charcoal-dt));
   color: light-dark(var(--black), var(--white));
-  border: 2px solid #ccc;
+  border: 2px solid light-dark(var(--white), var(--black));
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
 .form-input:focus {
-  border-color: black;
+  border-color: (var(--black), var(--white));
 }
 .email-error {
   display: none;
@@ -103,12 +103,12 @@
   background: light-dark(var(--light-grey), var(--charcoal-dt));
   resize: none;
   color: light-dark(var(--black), var(--white));
-  border: 2px solid #ccc;
+  border: 2px solid light-dark(var(--white), var(--black));
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:hover,
 .form-textarea:focus {
-  border-color: black;
+  border-color: light-dark(var(--black), var(--white));
 }
 .form-button {
   border-radius: 8px;
