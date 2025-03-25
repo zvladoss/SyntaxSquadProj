@@ -12,23 +12,27 @@
 .about__title-span {
     color: light-dark(var(--accet-green),var(--accet-green-dt));
 }
-
+.about__bio-title  {
+    margin-bottom: 32px;
+}
 .about__bio-text {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 32px;
+color: light-dark(var(--black),var(--white-dt));
+  }
+  .about__bio-text-margin{
+    margin-bottom: 24px;
   }
 
 .about__bio-image {
     border-radius: 18px;
     margin-bottom: 40px;
   }
-
+.about__bio-wrapper {
+    margin-bottom: 40px;
+}
 .about__info-education-item::before,
 .about__info-role-item::before {
     content: '';
-    display: inline-block;
+    display: block;
     border-radius: 1px;
     width: 4px;
     height: 4px;
@@ -36,7 +40,7 @@
     transform: rotate(-180deg);
     position: relative;
     left: 10px;
-    top: 20px;
+    top: 12px;
 }
 
 .about__info {
@@ -45,30 +49,29 @@
     gap: 40px;
 }
 
-.about__info-education-title {
-    padding-top: 40px;
-}
-
+.about__bio-title,
 .about__info-education-title,
-.about__info-role-title,
-.about__bio-title {
+.about__info-role-title
+ {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
+    color: light-dark(var(--black),var(--white-dt));
+    margin-bottom: 32px;
 }
 
 .about__info-education-list,
 .about__info-role-list {
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
 .about__info-education-text,
 .about__info-role-text {
-    color: var(--black);
+    color: light-dark(var(--black),var(--white-dt));
     margin-left: 32px;
 }
 
@@ -86,7 +89,9 @@
         gap: 32px;
         margin-bottom: 60px;
     }
-
+.about__bio {
+    margin-bottom: 40px;
+}
     .about__bio-image{
         width: 336px;
         height: 392px;
@@ -158,6 +163,10 @@
     .about__info {
         padding-left: 210px;
         gap: 136px;
+    }
+    .about__info-education-list,
+    .about__info-role-list {
+    gap: 16px;
     }
 
 }
