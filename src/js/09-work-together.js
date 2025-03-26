@@ -7,7 +7,7 @@ const validation = document.querySelector('.form-input');
 const successIcon = document.querySelector('.email-success-icon');
 const errorText = document.querySelector('.email-error');
 
-validation.addEventListener('change', event => {
+validation.addEventListener('input', event => {
   const emailField = event.target;
   const emailValue = emailField.value.trim();
   const emailRegex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
